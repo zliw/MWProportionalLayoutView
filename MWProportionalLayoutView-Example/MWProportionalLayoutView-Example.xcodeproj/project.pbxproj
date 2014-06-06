@@ -21,6 +21,7 @@
 		5B566D24194206A40003A71F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B566D06194206A40003A71F /* UIKit.framework */; };
 		5B566D2C194206A40003A71F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B566D2A194206A40003A71F /* InfoPlist.strings */; };
 		5B566D2E194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B566D2D194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m */; };
+		5B566D3D19421E7F0003A71F /* MWProportionalLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B566D3C19421E7F0003A71F /* MWProportionalLayoutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		5B566D29194206A40003A71F /* MWProportionalLayoutView-ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MWProportionalLayoutView-ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		5B566D2B194206A40003A71F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B566D2D194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWProportionalLayoutView_ExampleTests.m; sourceTree = "<group>"; };
+		5B566D3B19421E7F0003A71F /* MWProportionalLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWProportionalLayoutView.h; path = ../Classes/MWProportionalLayoutView.h; sourceTree = "<group>"; };
+		5B566D3C19421E7F0003A71F /* MWProportionalLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWProportionalLayoutView.m; path = ../Classes/MWProportionalLayoutView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		5B566CF6194206A40003A71F = {
 			isa = PBXGroup;
 			children = (
+				5B566D37194213330003A71F /* Classes */,
 				5B566D08194206A40003A71F /* MWProportionalLayoutView-Example */,
 				5B566D27194206A40003A71F /* MWProportionalLayoutView-ExampleTests */,
 				5B566D01194206A40003A71F /* Frameworks */,
@@ -114,7 +118,6 @@
 			children = (
 				5B566D11194206A40003A71F /* MWAppDelegate.h */,
 				5B566D12194206A40003A71F /* MWAppDelegate.m */,
-				5B566D14194206A40003A71F /* Main.storyboard */,
 				5B566D17194206A40003A71F /* MWViewController.h */,
 				5B566D18194206A40003A71F /* MWViewController.m */,
 				5B566D1A194206A40003A71F /* Images.xcassets */,
@@ -126,6 +129,7 @@
 		5B566D09194206A40003A71F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B566D14194206A40003A71F /* Main.storyboard */,
 				5B566D0A194206A40003A71F /* MWProportionalLayoutView-Example-Info.plist */,
 				5B566D0B194206A40003A71F /* InfoPlist.strings */,
 				5B566D0E194206A40003A71F /* main.m */,
@@ -150,6 +154,15 @@
 				5B566D2A194206A40003A71F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B566D37194213330003A71F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B566D3B19421E7F0003A71F /* MWProportionalLayoutView.h */,
+				5B566D3C19421E7F0003A71F /* MWProportionalLayoutView.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				5B566D13194206A40003A71F /* MWAppDelegate.m in Sources */,
 				5B566D19194206A40003A71F /* MWViewController.m in Sources */,
 				5B566D0F194206A40003A71F /* main.m in Sources */,
+				5B566D3D19421E7F0003A71F /* MWProportionalLayoutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +471,7 @@
 				5B566D33194206A40003A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B566D34194206A40003A71F /* Build configuration list for PBXNativeTarget "MWProportionalLayoutView-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +480,7 @@
 				5B566D36194206A40003A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
