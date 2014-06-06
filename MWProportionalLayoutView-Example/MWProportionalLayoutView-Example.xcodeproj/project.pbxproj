@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B566D03194206A40003A71F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B566D02194206A40003A71F /* Foundation.framework */; };
+		5B566D05194206A40003A71F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B566D04194206A40003A71F /* CoreGraphics.framework */; };
+		5B566D07194206A40003A71F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B566D06194206A40003A71F /* UIKit.framework */; };
+		5B566D0D194206A40003A71F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B566D0B194206A40003A71F /* InfoPlist.strings */; };
+		5B566D0F194206A40003A71F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B566D0E194206A40003A71F /* main.m */; };
+		5B566D13194206A40003A71F /* MWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B566D12194206A40003A71F /* MWAppDelegate.m */; };
+		5B566D16194206A40003A71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B566D14194206A40003A71F /* Main.storyboard */; };
+		5B566D19194206A40003A71F /* MWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B566D18194206A40003A71F /* MWViewController.m */; };
+		5B566D1B194206A40003A71F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B566D1A194206A40003A71F /* Images.xcassets */; };
+		5B566D22194206A40003A71F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B566D21194206A40003A71F /* XCTest.framework */; };
+		5B566D23194206A40003A71F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B566D02194206A40003A71F /* Foundation.framework */; };
+		5B566D24194206A40003A71F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B566D06194206A40003A71F /* UIKit.framework */; };
+		5B566D2C194206A40003A71F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B566D2A194206A40003A71F /* InfoPlist.strings */; };
+		5B566D2E194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B566D2D194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B566D25194206A40003A71F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B566CF7194206A40003A71F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B566CFE194206A40003A71F;
+			remoteInfo = "MWProportionalLayoutView-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B566CFF194206A40003A71F /* MWProportionalLayoutView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MWProportionalLayoutView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B566D02194206A40003A71F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B566D04194206A40003A71F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B566D06194206A40003A71F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B566D0A194206A40003A71F /* MWProportionalLayoutView-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MWProportionalLayoutView-Example-Info.plist"; sourceTree = "<group>"; };
+		5B566D0C194206A40003A71F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B566D0E194206A40003A71F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B566D10194206A40003A71F /* MWProportionalLayoutView-Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWProportionalLayoutView-Example-Prefix.pch"; sourceTree = "<group>"; };
+		5B566D11194206A40003A71F /* MWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWAppDelegate.h; sourceTree = "<group>"; };
+		5B566D12194206A40003A71F /* MWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWAppDelegate.m; sourceTree = "<group>"; };
+		5B566D15194206A40003A71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B566D17194206A40003A71F /* MWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWViewController.h; sourceTree = "<group>"; };
+		5B566D18194206A40003A71F /* MWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWViewController.m; sourceTree = "<group>"; };
+		5B566D1A194206A40003A71F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5B566D20194206A40003A71F /* MWProportionalLayoutView-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MWProportionalLayoutView-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B566D21194206A40003A71F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5B566D29194206A40003A71F /* MWProportionalLayoutView-ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MWProportionalLayoutView-ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		5B566D2B194206A40003A71F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B566D2D194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWProportionalLayoutView_ExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B566CFC194206A40003A71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B566D05194206A40003A71F /* CoreGraphics.framework in Frameworks */,
+				5B566D07194206A40003A71F /* UIKit.framework in Frameworks */,
+				5B566D03194206A40003A71F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B566D1D194206A40003A71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B566D22194206A40003A71F /* XCTest.framework in Frameworks */,
+				5B566D24194206A40003A71F /* UIKit.framework in Frameworks */,
+				5B566D23194206A40003A71F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B566CF6194206A40003A71F = {
+			isa = PBXGroup;
+			children = (
+				5B566D08194206A40003A71F /* MWProportionalLayoutView-Example */,
+				5B566D27194206A40003A71F /* MWProportionalLayoutView-ExampleTests */,
+				5B566D01194206A40003A71F /* Frameworks */,
+				5B566D00194206A40003A71F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B566D00194206A40003A71F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B566CFF194206A40003A71F /* MWProportionalLayoutView-Example.app */,
+				5B566D20194206A40003A71F /* MWProportionalLayoutView-ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B566D01194206A40003A71F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B566D02194206A40003A71F /* Foundation.framework */,
+				5B566D04194206A40003A71F /* CoreGraphics.framework */,
+				5B566D06194206A40003A71F /* UIKit.framework */,
+				5B566D21194206A40003A71F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B566D08194206A40003A71F /* MWProportionalLayoutView-Example */ = {
+			isa = PBXGroup;
+			children = (
+				5B566D11194206A40003A71F /* MWAppDelegate.h */,
+				5B566D12194206A40003A71F /* MWAppDelegate.m */,
+				5B566D14194206A40003A71F /* Main.storyboard */,
+				5B566D17194206A40003A71F /* MWViewController.h */,
+				5B566D18194206A40003A71F /* MWViewController.m */,
+				5B566D1A194206A40003A71F /* Images.xcassets */,
+				5B566D09194206A40003A71F /* Supporting Files */,
+			);
+			path = "MWProportionalLayoutView-Example";
+			sourceTree = "<group>";
+		};
+		5B566D09194206A40003A71F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B566D0A194206A40003A71F /* MWProportionalLayoutView-Example-Info.plist */,
+				5B566D0B194206A40003A71F /* InfoPlist.strings */,
+				5B566D0E194206A40003A71F /* main.m */,
+				5B566D10194206A40003A71F /* MWProportionalLayoutView-Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B566D27194206A40003A71F /* MWProportionalLayoutView-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B566D2D194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m */,
+				5B566D28194206A40003A71F /* Supporting Files */,
+			);
+			path = "MWProportionalLayoutView-ExampleTests";
+			sourceTree = "<group>";
+		};
+		5B566D28194206A40003A71F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B566D29194206A40003A71F /* MWProportionalLayoutView-ExampleTests-Info.plist */,
+				5B566D2A194206A40003A71F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B566CFE194206A40003A71F /* MWProportionalLayoutView-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B566D31194206A40003A71F /* Build configuration list for PBXNativeTarget "MWProportionalLayoutView-Example" */;
+			buildPhases = (
+				5B566CFB194206A40003A71F /* Sources */,
+				5B566CFC194206A40003A71F /* Frameworks */,
+				5B566CFD194206A40003A71F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MWProportionalLayoutView-Example";
+			productName = "MWProportionalLayoutView-Example";
+			productReference = 5B566CFF194206A40003A71F /* MWProportionalLayoutView-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B566D1F194206A40003A71F /* MWProportionalLayoutView-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B566D34194206A40003A71F /* Build configuration list for PBXNativeTarget "MWProportionalLayoutView-ExampleTests" */;
+			buildPhases = (
+				5B566D1C194206A40003A71F /* Sources */,
+				5B566D1D194206A40003A71F /* Frameworks */,
+				5B566D1E194206A40003A71F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B566D26194206A40003A71F /* PBXTargetDependency */,
+			);
+			name = "MWProportionalLayoutView-ExampleTests";
+			productName = "MWProportionalLayoutView-ExampleTests";
+			productReference = 5B566D20194206A40003A71F /* MWProportionalLayoutView-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B566CF7194206A40003A71F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Martin Wilz";
+				TargetAttributes = {
+					5B566D1F194206A40003A71F = {
+						TestTargetID = 5B566CFE194206A40003A71F;
+					};
+				};
+			};
+			buildConfigurationList = 5B566CFA194206A40003A71F /* Build configuration list for PBXProject "MWProportionalLayoutView-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B566CF6194206A40003A71F;
+			productRefGroup = 5B566D00194206A40003A71F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B566CFE194206A40003A71F /* MWProportionalLayoutView-Example */,
+				5B566D1F194206A40003A71F /* MWProportionalLayoutView-ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B566CFD194206A40003A71F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B566D1B194206A40003A71F /* Images.xcassets in Resources */,
+				5B566D0D194206A40003A71F /* InfoPlist.strings in Resources */,
+				5B566D16194206A40003A71F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B566D1E194206A40003A71F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B566D2C194206A40003A71F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B566CFB194206A40003A71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B566D13194206A40003A71F /* MWAppDelegate.m in Sources */,
+				5B566D19194206A40003A71F /* MWViewController.m in Sources */,
+				5B566D0F194206A40003A71F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B566D1C194206A40003A71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B566D2E194206A40003A71F /* MWProportionalLayoutView_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B566D26194206A40003A71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B566CFE194206A40003A71F /* MWProportionalLayoutView-Example */;
+			targetProxy = 5B566D25194206A40003A71F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B566D0B194206A40003A71F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B566D0C194206A40003A71F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5B566D14194206A40003A71F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B566D15194206A40003A71F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B566D2A194206A40003A71F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B566D2B194206A40003A71F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B566D2F194206A40003A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5B566D30194206A40003A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B566D32194206A40003A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MWProportionalLayoutView-Example/MWProportionalLayoutView-Example-Prefix.pch";
+				INFOPLIST_FILE = "MWProportionalLayoutView-Example/MWProportionalLayoutView-Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5B566D33194206A40003A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MWProportionalLayoutView-Example/MWProportionalLayoutView-Example-Prefix.pch";
+				INFOPLIST_FILE = "MWProportionalLayoutView-Example/MWProportionalLayoutView-Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5B566D35194206A40003A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MWProportionalLayoutView-Example.app/MWProportionalLayoutView-Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MWProportionalLayoutView-Example/MWProportionalLayoutView-Example-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MWProportionalLayoutView-ExampleTests/MWProportionalLayoutView-ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5B566D36194206A40003A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MWProportionalLayoutView-Example.app/MWProportionalLayoutView-Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MWProportionalLayoutView-Example/MWProportionalLayoutView-Example-Prefix.pch";
+				INFOPLIST_FILE = "MWProportionalLayoutView-ExampleTests/MWProportionalLayoutView-ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B566CFA194206A40003A71F /* Build configuration list for PBXProject "MWProportionalLayoutView-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B566D2F194206A40003A71F /* Debug */,
+				5B566D30194206A40003A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B566D31194206A40003A71F /* Build configuration list for PBXNativeTarget "MWProportionalLayoutView-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B566D32194206A40003A71F /* Debug */,
+				5B566D33194206A40003A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B566D34194206A40003A71F /* Build configuration list for PBXNativeTarget "MWProportionalLayoutView-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B566D35194206A40003A71F /* Debug */,
+				5B566D36194206A40003A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B566CF7194206A40003A71F /* Project object */;
+}
