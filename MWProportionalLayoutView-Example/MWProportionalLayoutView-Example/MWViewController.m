@@ -22,10 +22,10 @@
 {
     [super viewDidLoad];
 
-    NSArray *titles = @[@"half", @"quarter", @"1/8", @"1/16", @"1/16"];
+    NSArray *titles = @[@"50%", @"25%", @"12.5%", @"6.25%", @"6.25%"];
 
     NSMutableArray *percentages = [NSMutableArray arrayWithCapacity:titles.count];
-    CGFloat value = 50;
+    CGFloat value = 8;
 
     for (NSUInteger i = 0 ; i < titles.count; i++) {
         [percentages addObject:@(value)];
@@ -44,7 +44,7 @@
         [button setTitle:titles[i] forState:UIControlStateNormal];
 
 
-        button.backgroundColor = [UIColor colorWithHue:((CGFloat)i)/titles.count
+        button.backgroundColor = [UIColor colorWithHue:((CGFloat)i) / titles.count * 0.5
                                             saturation:0.75
                                             brightness:0.5
                                                  alpha:1];

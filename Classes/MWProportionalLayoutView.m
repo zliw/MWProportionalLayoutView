@@ -20,6 +20,7 @@
 - (void)setSubviews:(NSArray *)newViews withWeights:(NSArray *)weights;
 
 {
+    CGFloat scale = 1;
     NSAssert(newViews.count == weights.count, @"subviews array size should be equal to weights size");
 
     self.sortedViews = nil;
@@ -36,6 +37,15 @@
         if ([self.subviews indexOfObject:newViews] == NSNotFound) {
             [self addSubview:newView];
         }
+    }
+
+    CGFloat addup = 0;
+    for (NSNumber *weight in weights) {
+        addup += weight.floatValue;
+    }
+
+    if (addup > 0) {
+        scale = 100 / addup;
     }
 
     // I'm going through some pain here to sort two arrays in sync.
@@ -59,8 +69,9 @@
     self.weights = [NSMutableArray arrayWithCapacity:newViews.count];
 
     for (NSNumber *index in sortIndexes) {
-        [self.weights addObject:[weights objectAtIndex:index.intValue]];
+        CGFloat percentage = ((NSNumber *)weights[index.integerValue]).doubleValue * scale;
         [self.sortedViews addObject:[newViews objectAtIndex:index.intValue]];
+        [self.weights addObject:@(percentage)];
     }
 
     [self setNeedsDisplay];
@@ -81,9 +92,8 @@
     for (NSUInteger index = 0; index < self.sortedViews.count; index++) {
         UIView *view = self.sortedViews[index];
         CGFloat percentageOfCategory = ((NSNumber *)self.weights[index]).doubleValue;
-
-        CGSize size = currentRect.size;
         CGFloat slicePercentage = percentageOfCategory / ((100 - addupPercentage) / 100);
+        CGSize size = currentRect.size;
 
         // if rectangle is heigher than wide
         if (size.height > size.width) {
