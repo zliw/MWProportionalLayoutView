@@ -10,9 +10,8 @@
 
 @interface MWProportionalLayoutView()
 
-@property (strong, nonatomic) NSDictionary      *subviewDictionary;
-@property (strong, nonatomic) NSArray           *sortedViews;
-@property (strong, nonatomic) NSArray           *weights;
+@property (strong, nonatomic) NSMutableArray *sortedViews;
+@property (strong, nonatomic) NSMutableArray *weights;
 
 @end
 
@@ -39,7 +38,30 @@
         }
     }
 
-    self.sortedViews = newViews;
+    // I'm going through some pain here to sort two arrays in sync.
+    // Another way would be to force the user of this class to use
+    // objects conforming to a protocol, so the weight can be read
+    // from the object. Also I cannot use dictionaries, but the views
+    // would have to conform to NSCopying, which is not the case
+    // for the system views (probably with a reason).
+
+    NSMutableArray *sortIndexes = [NSMutableArray arrayWithCapacity:newViews.count];
+
+    for (NSUInteger i = 0 ; i < newViews.count ; i++) {
+        [sortIndexes addObject:[NSNumber numberWithInteger:i]];
+    }
+
+    [sortIndexes sortedArrayUsingComparator:(NSComparisonResult (^)(id,id))^(NSNumber *obj1, NSNumber *obj2){
+        return [weights[obj1.intValue] compare:weights[obj2.intValue]];
+    }];
+
+    self.sortedViews = [NSMutableArray arrayWithCapacity:newViews.count];
+    self.weights = [NSMutableArray arrayWithCapacity:newViews.count];
+
+    for (NSNumber *index in sortIndexes) {
+        [self.weights addObject:[weights objectAtIndex:index.intValue]];
+        [self.sortedViews addObject:[newViews objectAtIndex:index.intValue]];
+    }
 
     [self setNeedsDisplay];
 }
@@ -56,8 +78,9 @@
     CGRect slice;
     CGRect remainder;
 
-    for (UIView *view in self.sortedViews) {
-        CGFloat percentageOfCategory = ((NSNumber *)[self.subviewDictionary objectForKey:view]).doubleValue;
+    for (NSUInteger index = 0; index < self.sortedViews.count; index++) {
+        UIView *view = self.sortedViews[index];
+        CGFloat percentageOfCategory = ((NSNumber *)self.weights[index]).doubleValue;
 
         CGSize size = currentRect.size;
         CGFloat slicePercentage = percentageOfCategory / ((100 - addupPercentage) / 100);
