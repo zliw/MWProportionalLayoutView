@@ -6,3 +6,6 @@
 #
 # Pods/
 
+*.xcuserstate
+*.xccheckout
+xcdebugger
