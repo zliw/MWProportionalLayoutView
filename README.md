@@ -3,7 +3,15 @@ MWProportionalLayoutView
 
 A UIView subclass managing subviews.  Size and position is calculated according to given weights.
 
-## Requirements
+## Installation
+
+This classes are best installed using [Cocoapods](http://cocoapods.org). Add the following to your Podfile:
+
+```ruby
+pod 'MWProportionalLayoutView', :git=> 'https://github.com/zliw/MWProportionalLayoutView.git'
+```
+
+### Requirements
 
 `MWProportionalLayoutView` was written for ARC and requires iOS 7.0+ (but it should also work on earlier versions). 
 
