@@ -34,7 +34,6 @@
         if (i < titles.count - 2) value /= 2;
     }
 
-
     self.buttons = [NSMutableArray arrayWithCapacity:titles.count];
 
     for (NSUInteger i = 0 ; i < titles.count; i++) {
@@ -48,7 +47,6 @@
                                             saturation:0.75
                                             brightness:0.5
                                                  alpha:1];
-
 
         button.layer.borderColor = [UIColor blackColor].CGColor;
         button.layer.borderWidth = 0.5;
