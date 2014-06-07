@@ -32,4 +32,12 @@ This is, what the example application looks like :
 
 The current layout algorithm is fixed, but I surely will add some configuration to exchange/configure it later on.
 
-
+It works in the following way:
+1. Sort views by their weight
+2. Pop top-most view/weight
+3. Set rectangle to the whole area
+4. Is the rectangle wider than tall?
+5. If Yes: split up horizontally by percentage given by the weight
+6. If No: split up vertically by percentage given by the weight
+7. The rectangle is whatever not taken by the view
+8. Goto 4

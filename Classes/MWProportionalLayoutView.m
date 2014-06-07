@@ -97,10 +97,10 @@
 
         // if rectangle is heigher than wide
         if (size.height > size.width) {
-            CGRectDivide(currentRect, &slice, &remainder, currentRect.size.height * slicePercentage / 100, CGRectMinYEdge);
+            CGRectDivide(currentRect, &slice, &remainder, floor(currentRect.size.height * slicePercentage / 100), CGRectMinYEdge);
         }
         else {
-            CGRectDivide(currentRect, &slice, &remainder, currentRect.size.width * slicePercentage / 100, CGRectMaxXEdge);
+            CGRectDivide(currentRect, &slice, &remainder, floor(currentRect.size.width * slicePercentage / 100), CGRectMaxXEdge);
         }
 
         view.frame = slice;
