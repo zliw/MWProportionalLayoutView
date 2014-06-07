@@ -1,7 +1,7 @@
 MWProportionalLayoutView
 ========================
 
-A UIView subclass managing subviews.  Size and position is calculated according to given numbers.
+A UIView subclass managing subviews.  Size and position is calculated according to given weights.
 
 ## Requirements
 
@@ -25,4 +25,11 @@ MWProportionalLayoutView *layoutView = [[MWProportionalLayoutView alloc] initWit
 In a real world example it would make sense to configure a different look on the views (e.g. background color, labels, etc).
 
 This is, what the example application looks like :
+
 ![example](screenshots/screenshot.png)
+
+## Layout Algorithm
+
+The current layout algorithm is fixed, but I surely will add some configuration to exchange/configure it later on.
+
+
