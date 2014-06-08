@@ -17,8 +17,7 @@
 
 @implementation MWProportionalLayoutView
 
-- (void)setSubviews:(NSArray *)newViews withWeights:(NSArray *)weights;
-
+- (void)setSubviews:(NSArray *)newViews withWeights:(NSArray *)weights
 {
     CGFloat scale = 1;
     NSAssert(newViews.count == weights.count, @"subviews array size should be equal to weights size");
@@ -95,12 +94,14 @@
         CGFloat slicePercentage = percentageOfCategory / ((100 - addupPercentage) / 100);
         CGSize size = currentRect.size;
 
-        // if rectangle is heigher than wide
+        // if rectangle is taller than wide
         if (size.height > size.width) {
             CGRectDivide(currentRect, &slice, &remainder, floor(currentRect.size.height * slicePercentage / 100), CGRectMinYEdge);
         }
         else {
-            CGRectDivide(currentRect, &slice, &remainder, floor(currentRect.size.width * slicePercentage / 100), CGRectMaxXEdge);
+            CGFloat width = floor(currentRect.size.width * slicePercentage / 100);
+
+            CGRectDivide(currentRect, &slice, &remainder, width, (self.layoutMethod == MWProportionalLayoutLeftSplit)? CGRectMaxXEdge : CGRectMinXEdge);
         }
 
         view.frame = slice;

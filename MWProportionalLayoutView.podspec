@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MWProportionalLayoutView"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "A UIView subclass managing subviews with a layout algorithm determined by weights"
   s.description      = <<-DESC
                        A UIView subclass managing subviews. Size and position is calculated according to given weights.
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.screenshots      =  "https://raw.githubusercontent.com/zliw/MWProportionalLayoutView/master/screenshots/screenshot.png"
   s.license          = 'MIT'
   s.author           = { "Martin Wilz" => "github@wilz.de" }
-  s.source           = { :git => "https://github.com/zliw/MWProportionalLayoutView.git", :tag => "0.0.2" }
+  s.source           = { :git => "https://github.com/zliw/MWProportionalLayoutView.git", :tag => "0.0.3" }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
